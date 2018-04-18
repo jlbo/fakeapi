@@ -20,7 +20,7 @@ public class CoordHistoryService {
         coord1.setLongitude(-75.190741);
         coord1.setTime(new Date());
         coord2.setLatitude(39.957092);
-        coord2.setLatitude(-75.189409);
+        coord2.setLongitude(-75.189409);
         coord2.setTime(new Date(coord1.getTime().getTime() - 180000)); // - 3min
 
         coordHistory.add(coord1);
