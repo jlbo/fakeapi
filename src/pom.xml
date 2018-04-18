@@ -32,6 +32,8 @@
                 <configuration>
                     <url>http://localhost:8080/manager/text</url>
                     <server>TomcatServer</server>
+                    <username>mqttadmin</username>
+                    <password>intotnw5N5D</password>
                     <path>/mqtt</path>
                 </configuration>
             </plugin>
