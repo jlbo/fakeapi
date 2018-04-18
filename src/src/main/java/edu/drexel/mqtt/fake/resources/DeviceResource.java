@@ -24,10 +24,10 @@ public class DeviceResource extends BasicResource {
     }
 
     @GET
-    @Path("/{id}/coordhistory")
+    @Path("/coordhistory")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getCoordHistory(@PathParam("id") int id, @Context HttpHeaders headers) throws Exception {
-        CoordinateHist coordHistory = coordHistoryService.getCoordHistory(id);
+    public Response getCoordHistory(@Context HttpHeaders headers) throws Exception {
+        CoordinateHist coordHistory = coordHistoryService.getCoordHistory();
         return getResponse(Response.Status.OK, coordHistory);
 
     }

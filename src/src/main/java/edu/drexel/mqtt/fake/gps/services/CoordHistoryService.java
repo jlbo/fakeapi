@@ -28,7 +28,7 @@ public class CoordHistoryService {
         coordinateHist.setCoordHistory(coordHistory);
 
     }
-    public CoordinateHist getCoordHistory(int id) {
+    public CoordinateHist getCoordHistory() {
         return coordinateHist;
     }
 }
