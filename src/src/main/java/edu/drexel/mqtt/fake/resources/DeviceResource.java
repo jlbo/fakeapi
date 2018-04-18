@@ -27,7 +27,7 @@ public class DeviceResource extends BasicResource {
     @Path("/coordhistory")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getCoordHistory(@Context HttpHeaders headers) throws Exception {
-        CoordinateHist coordHistory = coordHistoryService.getCoordHistory();
+        List<Coordinate> coordHistory = coordHistoryService.getCoordHistory();
         return getResponse(Response.Status.OK, coordHistory);
 
     }

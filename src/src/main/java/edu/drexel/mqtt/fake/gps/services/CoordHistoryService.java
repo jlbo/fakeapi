@@ -9,10 +9,9 @@ import java.util.List;
 
 public class CoordHistoryService {
 
-    CoordinateHist coordinateHist;
+    List<Coordinate> coordHistory;
     public CoordHistoryService() {
-        coordinateHist = new CoordinateHist();
-        List<Coordinate> coordHistory = new ArrayList<>();
+        coordHistory = new ArrayList<>();
         Coordinate coord1 = new Coordinate();
         Coordinate coord2 = new Coordinate();
 
@@ -25,10 +24,9 @@ public class CoordHistoryService {
 
         coordHistory.add(coord1);
         coordHistory.add(coord2);
-        coordinateHist.setCoordHistory(coordHistory);
 
     }
-    public CoordinateHist getCoordHistory() {
-        return coordinateHist;
+    public List<Coordinate> getCoordHistory() {
+        return coordHistory;
     }
 }
